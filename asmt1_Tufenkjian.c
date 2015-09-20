@@ -16,18 +16,18 @@ int  cycle_total = 0;
 
 void allocate_memory()
 {
-  	cpi 	=  (int*) malloc (nmbr_instr_classes*sizeof(int));
+	cpi 	=  (int*) malloc (nmbr_instr_classes*sizeof(int));
 	count   =  (int*) malloc (nmbr_instr_classes*sizeof(int));
 	return;
 }
 
 void deallocate_memory()
 {
-if (cpi != NULL)
-	free(cpi);
-if (count != NULL)
-	free(count);
-	return;
+	if (cpi != NULL)
+		free(cpi);
+	if (count != NULL)
+		free(count);
+		return;
 }
 
 void enter_params()
