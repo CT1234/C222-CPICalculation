@@ -6,7 +6,7 @@
 // ============================================================================
 #include <stdio.h>
 #include <stdlib.h>
-//global variables
+
 int  nmbr_instr_classes;
 int	 freq;
 int* cpi     = NULL;
@@ -86,17 +86,17 @@ float calc_cpu_time()
 
 float calc_mips()
 {
-    float mips = freq/calc_avg_cpi();
-    return mips;
+	float mips = freq/calc_avg_cpi();
+	return mips;
 }
 
 void print_performance()
 {
-    float average_CPI = calc_avg_cpi();
+	float average_CPI = calc_avg_cpi();
 	float cpu_time	  = calc_cpu_time();
 	float mips 		  = calc_mips();
 
-	printf("-------------------------\n");
+    printf("-------------------------\n");
     printf("|Performance    |Value  |\n");
     printf("-------------------------\n");
     printf("|Average CPI    |%07.2f|\n",(float)average_CPI);
