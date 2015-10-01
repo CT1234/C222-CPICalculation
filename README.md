@@ -2,4 +2,4 @@
 Class assignment - Simulate CPI calculations using C
 September 18th, 2014
 
-Program that calculates Clocks per Instruction based on number of instruction classes and frequency.
+Program that calculates Clocks per Instruction Performance, Average CPI, CPU Time(ms) and MIPS, based on number of instruction classes and frequency.
